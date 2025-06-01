@@ -1,0 +1,20 @@
+[project]
+name = "rtb-telegram-bot"
+version = "0.1.0"
+description = "Makes, what a bot do, but for the band 'Remember the Birds'"
+authors = [{ name = "Jan Otto"}]
+requires-python = ">=3.12"
+dependencies = [
+    "python-dotenv>=1.1.0",
+    "python-telegram-bot>=22.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+rtb-telegram-bot = "rtb_telegram_bot:main"
+
+[tool.ruff.lint]
+extend-select = ["I"]
