@@ -16,9 +16,9 @@ CHAT_ID = os.getenv("CHAT_ID")
 QUESTION = os.getenv(
     "QUESTION", "Bist du nächste Woche ({datetime}) zur Bandprobe anwesend?"
 )
-DAYS = os.getenv("DAYS", 7)
-HOUR = os.getenv("HOUR", 18)
-MINUTE = os.getenv("MINUTE", 0)
+DAYS = int(os.getenv("DAYS", 7))
+HOUR = int(os.getenv("HOUR", 18))
+MINUTE = int(os.getenv("MINUTE", 0))
 OPTIONS = os.getenv("OPTIONS", "Ja,Nein").split(",")
 
 bot = Bot(token=BOT_TOKEN)
