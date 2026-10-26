@@ -17,8 +17,8 @@ QUESTION = os.getenv(
     "QUESTION", "Bist du nächste Woche ({datetime}) zur Bandprobe anwesend?"
 )
 DAYS = int(os.getenv("DAYS", 7))
-HOUR = int(os.getenv("HOUR", 18))
-MINUTE = int(os.getenv("MINUTE", 0))
+HOUR = int(os.getenv("HOUR", 17))
+MINUTE = int(os.getenv("MINUTE", 45))
 OPTIONS = os.getenv("OPTIONS", "Ja,Nein").split(",")
 
 bot = Bot(token=BOT_TOKEN)
